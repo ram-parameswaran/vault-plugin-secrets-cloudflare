@@ -33,3 +33,5 @@ jobs:
         goarch: amd64
         goversion: 1.21.4
         overwrite: true
+        pre_command: CGO_ENABLED=0
+        build_command: go build -o vault-plugin-secrets-cloudflare cmd/cloudflare/main.go
