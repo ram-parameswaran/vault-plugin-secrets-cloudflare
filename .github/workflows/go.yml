@@ -33,4 +33,3 @@ jobs:
         goarch: amd64
         goversion: 1.21.4
         overwrite: true
-        project_path: cmd/cloudflare/main.go
