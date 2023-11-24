@@ -33,5 +33,5 @@ jobs:
         goarch: amd64
         goversion: 1.21.4
         overwrite: true
-        pre_command: cd cmd/cloudflare
-        build_command: CGO_ENABLED=0 go build main.go
+        pre_command: export CGO_ENABLED=0 ; cd cmd/cloudflare
+        build_command: go build main.go
